@@ -17,7 +17,7 @@ public class WizardController {
 
     //private WizardRepository repository = new WizardRepository();
 	@Autowired
-	private WizardDao repository = new WizardRepository();
+	private WizardDao repository;
 
     @GetMapping("/wizards")
     public String getAll(Model model) {
